@@ -1,0 +1,17 @@
+node_modules
+.env
+
+
+# Environment variables
+.env
+/dist
+
+# Node modules
+node_modules
+dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+.vercel

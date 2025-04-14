@@ -1,0 +1,413 @@
+{
+    "categories": {
+      "Absenzen": {
+        "Absenz": [
+          {
+            "Frage": "Welche bezahlten Absenzen gibt es?",
+            "Antwort": "Umzug 1, Geburt (VSE noch offen/MSE - Abbruch der Massnahme), Todesfall 1-3 engster Familienkreis, Vorstellungstermine, Schnuppern",
+            "Dokumente und Links": [
+              "https://www.ahv-iv.ch/p/4.01.d",
+              "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV?pa_key=products"
+            ]
+          },
+          {
+            "Frage": "Ab wann bekommt man eine unentschuldigte Absenz?",
+            "Antwort": "Wenn keine Abmeldung vorhanden ist (mündlich oder schriftlich) und die Person von Seiten Visio nicht erreicht wird weder per Telefon noch per Mail.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Todesfall": [
+          {
+            "Frage": "Bekomme ich frei, wenn meine Oma stirbt? Resp. für die Beerdigung?",
+            "Antwort": "1-3 Tage",
+            "Dokumente und Links": [
+              "https://www.ahv-iv.ch/p/4.01.d",
+              "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV?pa_key=products"
+            ]
+          }
+        ],
+        "Krankheit": [
+          {
+            "Frage": "Kann ich zu Hause bleiben, wenn mein Kind krank ist?",
+            "Antwort": "Ja, es gelten die gleichen Bedingungen wie bei Krankheit",
+            "Dokumente und Links": [
+              "https://www.ahv-iv.ch/p/4.01.d",
+              "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV?pa_key=products"
+            ]
+          },
+          {
+            "Frage": "Ist mein Arzttermin eine bezahlte Absenz?",
+            "Antwort": "Ja. Der Arzttermin muss an Randzeiten (wenn möglich) gelegt werden. Falls nicht möglich, ist eine Absenzmeldung notwendig.",
+            "Dokumente und Links": [
+              "https://www.ahv-iv.ch/p/4.01.d",
+              "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV?pa_key=products"
+            ]
+          },
+          {
+            "Frage": "Wie verhalte ich mich, wenn ich krank bin?",
+            "Antwort": "Eine telefonische Abmeldung ist nötig spätestens bis zu meinem aktuellen Arbeitsbeginn.",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "Ab wann brauche ich ein Arztzeugnis? Wie muss ich dies einreichen?",
+            "Antwort": "Bei 4 aufeinanderfolgenden Krankentagen, inkl. Wochenende oder Pensum bedingte freie Tage, ist zwingend ein Arztzeugnis einzureichen. Bei 3 Krankentagen kann auf ein Arztzeugnis verzichtet werden.",
+            "Dokumente und Links": [
+              "https://www.ahv-iv.ch/p/4.01.d",
+              "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV?pa_key=products"
+            ]
+          },
+          {
+            "Frage": "Kann ich mich per Mail krank melden?",
+            "Antwort": "Nein, wir wünschen die persönliche Abmeldung.",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "Muss ich mich wirklich jeden Tag melden, wenn ich krank bin?",
+            "Antwort": "Ja. Somit wissen wir immer aktuellen Bescheid, wie es ihnen geht und können bei Bedarf (ab 4tem Krankheitstag) daran erinnern, dass ein Arztzeugnis nötig ist. Wenn AZ vorliegt und länger dauert, ist keine Abmeldung notwendig.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Ferien": [
+          {
+            "Frage": "Wie muss ich meine Ferien eingeben?",
+            "Antwort": "Mit der Absenzmeldung (Vorlage im TN Arbeitsordner)",
+            "Dokumente und Links": [
+              ""
+            ]
+          },
+          {
+            "Frage": "Wie viele Ferien habe ich pro Massnahme? Darf ich diese kumulieren? Wie muss ich diese eingeben?",
+            "Antwort": "5 Arbeitstage pro Massnahme (3 Monate). Diese müssen wenn möglich am Stück genommen werden und wenn möglich gegen Ende der Massnahme. Kumulation ist möglich. Erfassung mit Absenzmeldung.",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Schnupern": [
+          {
+            "Frage": "Muss ich für meinen Schnuppereinsatz eine Absenzmeldung ausfüllen?",
+            "Antwort": "Ja. (Vorlage mit TN Arbeitsordner)",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Verspätung": [
+          {
+            "Frage": "Was passiert, wenn ich zu spät komme?",
+            "Antwort": "Beim einmaligen zu spät kommen passiert nichts. Sollte dies vermehrt der Fall sein, besprechen sie die Konsequenten resp. Massnahmen mit ihrem Coach.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Überzeit": [
+          {
+            "Frage": "Darf ich meine Überzeit kompensieren?",
+            "Antwort": "Grundsätzlich sollte keine Überzeit gemacht werden.",
+            "Dokumente und Links": []
+          }
+        ]
+      },
+      "Dokuemente generell": {
+        "Zeiterfassung": [
+          {
+            "Frage": "Ich habe keine aktuelle Zeiterfassung",
+            "Antwort": "Haben Sie den Ordner \"leer\" in der Zeiterfassung geprüft? Falls nichts vorhanden --> Support fragen",
+            "Dokumente und Links": [
+              "../uploads/02_Anleitung_Zeiterfassung_Befindlichkeit_Elektronische_Unterschrift.docx"
+            ]
+          },
+          {
+            "Frage": "Wem muss ich meine Zeiterfassung Ende Monat senden?",
+            "Antwort": "Die ZE muss von Ihnen in den Ordner \"ausgefüllt\" verschoben werden. Ein Versenden ist nicht notwendig. Diese wird automatisch geprüft und wenn in Ordnung, direkt ins SelectLine verschoben. Ist die Dateibeschriftung nicht korrekt, erhalten sie eine entsprechende Mail vom Support mit der Bitte um Anpassung des Dateinamens.",
+            "Dokumente und Links": [
+              "../uploads/02_Anleitung_Zeiterfassung_Befindlichkeit_Elektronische_Unterschrift.docx"
+            ]
+          },
+          {
+            "Frage": "Wie fülle ich meine Zeiterfassung korrekt aus?",
+            "Antwort": "Am besten ist es, wenn sie die Zeiterfassung jeden Tag aktuell ausfüllen, damit nicht vergessen geht.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Unterschrift": [
+          {
+            "Frage": "Wie füge ich meine Unterschrift in die Zeiterfassung / generell in Dokumente ein?",
+            "Antwort": "Anleitung\nElektronische Unterschrift erstellen:\n\n1.\tAuf einem weissen Blatt Papier Unterschreiben\n2.\tBlatt mit Unterschrift einscannen\n3.\tDatei am PC öffnen\n4.\tMit dem Snipping Tool die Unterschrift passend ausschneiden\n5.\tDas neu entstandene Bild mit passender Bezeichnung in ihrem persönlichen Laufwerk S: abspeichern als .png oder .jpg",
+            "Dokumente und Links": [
+              "../uploads/02_Anleitung_Zeiterfassung_Befindlichkeit_Elektronische_Unterschrift.docx"
+            ]
+          }
+        ],
+        "Wochenplan": [
+          {
+            "Frage": "An wen sende ich den Wochenplan?",
+            "Antwort": "Wochenplan (PDF an:\t\nOlten: \t\tadmin.ol@visiocoaching.ch\nSolothurn:\tadmin.so@visiocoaching.ch \nBrugg:\t\tadmin.br@visiocoaching.ch\t\nWohlen: \tadmin.wo@visiocoaching.ch\nsowie an Ihren Trainer im CC.",
+            "Dokumente und Links": [
+              "../uploads/01_Anletung.docx"
+            ]
+          },
+          {
+            "Frage": "Wie speichere ich meinen Wochenplan korrekt ab?",
+            "Antwort": "Benennen sie das Dokument um in: \nWP_V.N. (Initialen Vorname.Nachname.)_(AHV-Nr.*)_Datum (01.09.2024-05.06.2024)\nz.B. WP_V.N._756.0000.0000.00_01.09.2024-05.09.2024.pdf \n-> *AHV-Nr. ist auf der Zeiterfassung ersichtlich\nVermerkt: s. Anleitung persönliches Laufwerk für Wochenplan",
+            "Dokumente und Links": []
+          }
+        ],
+        "Absenzmeldung": [
+          {
+            "Frage": "An wen sende ich meine Absenzmeldung?",
+            "Antwort": "Absenzmeldung (Mail) an: Coach",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Reflexion": [
+          {
+            "Frage": "An wen sende ich meine Reflexionen?",
+            "Antwort": "Reflexion (Vorlagedokumet) an: Coach",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Dateibeschriftung": [
+          {
+            "Frage": "Wie sieht die korrekte Dateibeschriftung aus?",
+            "Antwort": "Wochenplan: \nWP_V.N. (Initialen Vorname.Nachname.)_(AHV-Nr.*)_Datum (01.09.2024-05.06.2024)\n-> *AHV-Nr. ist auf der Zeiterfassung ersichtlich\nReflexion: \n Meine_Reflexion_M.M._01.01.2022.pdf\n\n s. Anleitungen/Vorlagen persönliches Laufwerk",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ]
+      },
+      "IT Fragen": {
+        "Drucker": [
+          {
+            "Frage": "Der Drucker funktioniert nicht mehr",
+            "Antwort": "Haben Sie den Drucker auf Papier und Toner geprüft, zeigt er Fehlermeldungen an? Falls Fehlermeldung --> diese beheben. Falls Fehler nicht gefunden, bitte Drucker ausschalten, ein paar Sekunden warten und wieder anschalten. Falls das Problem weiter besteht, informieren Sie den Support.",
+            "Dokumente und Links": []
+          }
+        ],
+        "PC": [
+          {
+            "Frage": "Mein PC geht nicht mehr an",
+            "Antwort": "Kontrollieren Sie die Kabel und stecken Sie diese nach Bedarf ein. Computer versuchen neuzustarten. Falls das Problem weiter besteht, wenden Sie sich an den Support.",
+            "Dokumente und Links": []
+          }
+        ],
+        "IT Fragen": [
+          {
+            "Frage": "Generelle IT Fragen zu Login, gesperrtes Login, Tastatur oder Mausprobleme",
+            "Antwort": "Login funktioniert nicht, oder ist gesperrt oder sonstiges, jeweils direkt an den Support wenden.\nWenn Maus oder Tastatur --> USB-Port wechseln (umstecken)",
+            "Dokumente und Links": []
+          }
+        ],
+        "Online Programme": [
+          {
+            "Frage": "Ich kann bei diversen Online-Tests das Resultat nicht abspeichern?",
+            "Antwort": "Liegt wahrscheinlich am Internet Explorer. Bitte versuchen Sie den Firefox, dann sollte es klappen. Hinweis: Link kann in Firefox kopiert werden so muss Test nicht neu gemacht werden.",
+            "Dokumente und Links": []
+          }
+        ],
+        "PDF 24": [
+          {
+            "Frage": "Wie benutze ich PDF 24?",
+            "Antwort": "S. Anleitungen/Vorlagen persönliches Laufwerk",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Scannen": [
+          {
+            "Frage": "Wie scanne ich doppelseitig?",
+            "Antwort": "Wählen Sie beim Drucker das Feld \"Optionen\" an wenn Sie im Scan-Menü sind.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Online Tests": [
+          {
+            "Frage": "Welche E-Mail Adresse verwende ich bei Online Tests, KI usw?",
+            "Antwort": "Bitte verwenden Sie jeweils immer ihre private E-Mail-Adresse. So können Sie die Zugänge auch nach ihrem Einsatz in der Visio weiter benutzen.",
+            "Dokumente und Links": []
+          }
+        ]
+      },
+      "Kernprozesse und Tools": {
+        "ICDL": [
+          {
+            "Frage": "An wen wende ich mich für ICDL Prüfungen?",
+            "Antwort": "Entweder hängt eine Anmeldeliste an den Infoboards, oder sie fragen ihren Trainer",
+            "Dokumente und Links": []
+          }
+        ],
+        "Coaching": [
+          {
+            "Frage": "Welche Aufgaben gehören zum Coaching?",
+            "Antwort": "Im Coaching arbeiten Sie mit Ihrem persönlichen Coach an Ihren persönlichen Themen. Diese sind zu Beginn jeweils besprochen und auf der Zielvereinbarung festgehalten. Weitere Inputs zum Coaching finden Sie in ihren Arbeitsordner.",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Training": [
+          {
+            "Frage": "Welche Aufgaben gehören zum Training?",
+            "Antwort": "Im Training arbeiten Sie mit Ihrem Trainer an fachlichen und methodischen Themen. Sie erhalten eine Auswahl an Tools mit denen sie arbeiten können. So stärken Sie ihre Fach- und Methodenkompetenzen. Weitere Inputs zum Training finden Sie in Ihrem Arbeitsordner",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ],
+        "Admin": [
+          {
+            "Frage": "Bei welchen Themen muss ich mich an die Admin wenden und wann an die Coaches?",
+            "Antwort": "Wenn es um persönliche Themen geht, dann wenden Sie sich an Ihren Coach. Falls er gerade besestzt ist, dann schreiben Sie eine Mail. Wenn es um administrative Fragen geht wie, neue Büromaterial usw. dann wenden Sie sich an die Admin.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Teamaktivitäten": [
+          {
+            "Frage": "Muss ich an Teamaktivitäten teilnehmen?",
+            "Antwort": "Die Workshops und die Projektwochen sind grundsätzlich für alle obligatorisch. Das Management zum Glück, der Workshop Selbstmanagement sowie das Bewerbungskaffee sind für bestimmte Teilnehmende vorgesehen. Hier kommt der Coach/Trainer auf Sie zu, oder Sie können in einem Coachinggespräch danach fragen.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Coach / Trainer": [
+          {
+            "Frage": "Wer ist mein Coach, mein Trainer?",
+            "Antwort": "Fragen Sie beim Support nach",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "Ist mein Coach jetzt frei?",
+            "Antwort": "Fragen Sie beim Support nach",
+            "Dokumente und Links": []
+          }
+        ],
+        "Küchenämtli": [
+          {
+            "Frage": "Was beinhaltet das Küchenämtli?",
+            "Antwort": "S. Plan/Aufgabenliste am Infoboard oder in der Küche",
+            "Dokumente und Links": []
+          }
+        ],
+        "Austritt": [
+          {
+            "Frage": "Was muss ich bei Austritt alles erledigen?",
+            "Antwort": "S. separate Austrittsmail vom Support (s. auch CL Austritt in persönlichem Laufwerk)",
+            "Dokumente und Links": [
+              ""
+            ]
+          }
+        ]
+      },
+      "Generell für Alle": {
+        "Pausen": [
+          {
+            "Frage": "Muss ich Pause machen?",
+            "Antwort": "Eine Pause wird empfohlen.",
+            "Dokumente und Links": []
+          }
+        ],
+        "offene Bürotür": [
+          {
+            "Frage": "Wieso muss die Tür offen bleiben?",
+            "Antwort": "Sicherheitsgründe",
+            "Dokumente und Links": []
+          }
+        ],
+        "Anmeldung Empfang": [
+          {
+            "Frage": "Muss ich mich jeweils am Morgen am Empfang anmelden?",
+            "Antwort": "Grunsätzlich nicht. Ausgenommen Spezialvereinbarungen",
+            "Dokumente und Links": []
+          }
+        ],
+        "Dresscode": [
+          {
+            "Frage": "Gibt es einen Dresscode?",
+            "Antwort": "Wir erwarten angemessene Bürokleidung.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Essen": [
+          {
+            "Frage": "Wieso darf ich nicht im Büro essen?",
+            "Antwort": "Hygiene an den APs / Gegessen wird in den Pauseräumen",
+            "Dokumente und Links": []
+          }
+        ],
+        "Solothurn": [
+          {
+            "Frage": "Wieso darf nur im ersten Stock gegessen werden?",
+            "Antwort": "Hygiene an den APs / Gegessen wird in den Pauseräumen",
+            "Dokumente und Links": []
+          }
+        ]
+      },
+      "Standort bezogen": {
+        "Wohlen, Solothurn": [
+          {
+            "Frage": "Wie reserviere ich das Airtime Studio?",
+            "Antwort": "Das Airtime-Studio ist als Raum in ihrem Outlook Kalender ersichtlich und kann entsprechend mit einem Termin gebucht werden.",
+            "Dokumente und Links": []
+          }
+        ],
+        "OL, SO, BR, WO": [
+          {
+            "Frage": "Wo kann ich Telefonate führen?",
+            "Antwort": "Unterschiedlich pro Standort…",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "Wo befindet sich der Schredder?",
+            "Antwort": "Unterschiedlich pro Standort…",
+            "Dokumente und Links": []
+          }
+        ]
+      },
+      "Massnahme": {
+        "Taggeld": [
+          {
+            "Frage": "Wann erhalte ich mein Taggeld?",
+            "Antwort": "Um den 6. Arbeitstag",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "An wen kann ich mich wenden bei Fragen zum IV-Taggeld?",
+            "Antwort": "Bitte wenden Sie sich an die Administration",
+            "Dokumente und Links": []
+          },
+          {
+            "Frage": "Ich habe zu wenig Geld ausbezahlt erhalten",
+            "Antwort": "Prüfen Sie das separate Schreiben \"Verfügung Taggelder der Invalidenversicherung\" von der IV. Stimmt der Betrag nicht überein bei Admin melden.",
+            "Dokumente und Links": []
+          }
+        ],
+        "Spesenformular": [
+          {
+            "Frage": "Wie muss ich mein Spesenformular ausfüllen?",
+            "Antwort": "Dazu gibt es eine Videoanleitung in Ihrem Arbeitsordner",
+            "Dokumente und Links": [
+                ""
+            ]
+          }
+        ],
+        "Spesen": [
+          {
+            "Frage": "Bekomme ich Spesen?",
+            "Antwort": "Prüfen Sie Ihre Verfügung für die IV-Massnahme",
+            "Dokumente und Links": []
+          }
+        ],
+        "Krankheitstage": [
+          {
+            "Frage": "Sind Krankheitstage bezahlt wenn ich ein IV-Taggeld erhalte?",
+            "Antwort": "Im ersten Eingliederungsjahr: 30 Tage, • ab dem zweiten Eingliederungsjahr: 60 Tage, • ab dem dritten Eingliederungsjahr: 90 Tage",
+            "Dokumente und Links": []
+          }
+        ]
+      }
+    }
+  }

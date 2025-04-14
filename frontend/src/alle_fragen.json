@@ -1,0 +1,48 @@
+{
+  "categories": {
+    "Generell für Alle": {
+      "Pausen": [
+        {
+          "Frage": "muss ich Pause machen?",
+          "Antwort": "Eine Pause wird empfohlen.",
+          "Dokumente und Links": []
+        }
+      ],
+      "offene Bürotür": [
+        {
+          "Frage": "wieso muss die Tür offen bleiben?",
+          "Antwort": "Sicherheitsgründe",
+          "Dokumente und Links": []
+        }
+      ],
+      "Anmeldung Empfang": [
+        {
+          "Frage": "muss ich mich jeweils am Morgen am Empfang anmelden?",
+          "Antwort": "Grunsätzlich nicht. Ausgenommen Spezialvereinbarungen",
+          "Dokumente und Links": []
+        }
+      ],
+      "Dresscode": [
+        {
+          "Frage": "Gibt es einen Dresscode?",
+          "Antwort": "wir erwarten angemessene Bürokleidung.",
+          "Dokumente und Links": []
+        }
+      ],
+      "Essen": [
+        {
+          "Frage": "Wieso darf ich nicht im Büro essen?",
+          "Antwort": "Hygiene an den APs / Gegessen wird in den Pauseräumen",
+          "Dokumente und Links": []
+        }
+      ],
+      "Solothurn": [
+        {
+          "Frage": "wieso darf nur im ersten Stock gegessen werden?",
+          "Antwort": "Hygiene an den APs / Gegessen wird in den Pauseräumen",
+          "Dokumente und Links": []
+        }
+      ]
+    }
+  }
+}
