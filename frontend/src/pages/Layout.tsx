@@ -19,6 +19,7 @@ import {
   SidebarMenuItem,
   SidebarProvider,
 } from "@/components/ui/sidebar"
+import { ModeToggle } from "@/components/ModeToggle";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
@@ -26,6 +27,9 @@ export function Layout() {
   return (
     <SidebarProvider>
       <div className="h-screen w-screen flex flex-col overflow-hidden relative">
+        {/* Add the mode toggle */}
+        <ModeToggle currentMode="admin" />
+        
         {/* Header for all devices */}
         <div className="h-[50px] w-full bg-[#2E2E30] flex items-center px-4">
           {/* Mobile menu button (only shows on mobile) */}
