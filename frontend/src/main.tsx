@@ -7,8 +7,6 @@ import { ChatHistory } from "@/pages/ChatHistory";
 import Analytics from "@/pages/Analytics";
 import Questions from "@/pages/Questions";
 
-import "@/styles/globals.css";
-
 const router = createBrowserRouter([
   {
     path: "/admin-panel",
