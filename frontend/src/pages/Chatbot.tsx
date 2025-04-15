@@ -5,6 +5,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import "@/styles/Chatbot.css";
+import { fetchApi } from "@/lib/api";
 
 type Message = {
   id: string;
@@ -72,27 +73,22 @@ export default function ChatbotUI() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3000/ai/chat", {
+      const text = await fetchApi("ai/chat", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify({ question: inputValue }),
       });
 
-      const text = await response.text();
       const botMessage: Message = {
         id: Date.now().toString(),
-        text: text || "I couldn't process your request",
+        text: typeof text === 'string' ? text : "Ich konnte Ihre Anfrage nicht verarbeiten",
         isUser: false,
         timestamp: new Date(),
       };
 
       setMessages(prev => [...prev, botMessage]);
 
-      if (text.toLowerCase().includes("ich kenne die antwort")) {
-        const contactRes = await fetch("http://localhost:3000/admin-profiles");
-        const admins = await contactRes.json();
+      if (typeof text === 'string' && text.toLowerCase().includes("ich kenne die antwort")) {
+        const admins = await fetchApi("admin-profiles");
         if (admins.length > 0) {
           setAdminContact({ email: admins[0].email, phone_number: admins[0].phone_number });
         }
@@ -202,9 +198,8 @@ export default function ChatbotUI() {
                 </Avatar>
               )}
               <div
-                className={`rounded-lg px-4 py-3 text-base md:text-sm max-w-[85%] ${
-                  message.isUser ? "bg-[#A1C611] text-white" : "bg-gray-100"
-                }`}
+                className={`rounded-lg px-4 py-3 text-base md:text-sm max-w-[85%] ${message.isUser ? "bg-[#A1C611] text-white" : "bg-gray-100"
+                  }`}
               >
                 {message.text}
                 {!message.isUser && adminContact && message.text.toLowerCase().includes("ich kenne die antwort") && (
