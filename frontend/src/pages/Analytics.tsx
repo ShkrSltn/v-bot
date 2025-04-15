@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CreateQuestionForm from "./CreateNewQuestionForm";
-import { fetchApi, API_URL } from "@/lib/api";
+import { fetchApi } from "@/lib/api";
 
 interface SimilarGroup {
   count: number;
