@@ -2,7 +2,13 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html"
+            "destination": "/"
         }
-    ]
+    ],
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "env": {
+        "VITE_API_URL": "https://hack4-server-895047329025.us-central1.run.app"
+    }
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TrashIcon } from "lucide-react"
+import { fetchApi } from "@/lib/api"
 
 interface DocumentLink {
   id: number
@@ -42,9 +43,8 @@ export default function CreateQuestionForm({ categories, onCreated, onCancel, pr
   const handleCreate = async () => {
     if (!newQuestion || !newAnswer || !newSubcategoryId) return
 
-    const response = await fetch("http://localhost:3000/faq-items", {
+    const newFaqItem = await fetchApi("faq-items", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         question: newQuestion,
         answer: newAnswer,
@@ -52,13 +52,10 @@ export default function CreateQuestionForm({ categories, onCreated, onCancel, pr
       }),
     })
 
-    const newFaqItem = await response.json()
-
     await Promise.all(
       newDocuments.map((doc) =>
-        fetch("http://localhost:3000/documents", {
+        fetchApi("documents", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             url: doc.url,
             faq_item_id: parseInt(newFaqItem.id),

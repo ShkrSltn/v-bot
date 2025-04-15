@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CreateQuestionForm from "./CreateNewQuestionForm";
+import { fetchApi, API_URL } from "@/lib/api";
 
 interface SimilarGroup {
   count: number;
@@ -39,8 +40,7 @@ export default function Analytics() {
   const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/categories")
-      .then(res => res.json())
+    fetchApi("categories")
       .then(setCategories)
       .catch(() => setCategories([]));
   }, []);
@@ -54,9 +54,7 @@ export default function Analytics() {
 
     setTimeout(async () => {
       try {
-        const res = await fetch("http://localhost:3000/bot-history/analyze-similar-questions");
-        if (!res.ok) throw new Error("Fehler beim Abrufen der Daten.");
-        const data = await res.json();
+        const data = await fetchApi("bot-history/analyze-similar-questions");
         setResults(data);
         setStep(3);
       } catch (err) {
@@ -127,8 +125,8 @@ export default function Analytics() {
                     </p>
                   </div>
                   <Button onClick={() => openChatbotWithPrefill(group.recommendation.question)}
-                      className="bg-[#00589A] hover:bg-[#00487A] text-white flex items-center gap-1"
->
+                    className="bg-[#00589A] hover:bg-[#00487A] text-white flex items-center gap-1"
+                  >
                     Frage hinzufügen
                   </Button>
                 </div>

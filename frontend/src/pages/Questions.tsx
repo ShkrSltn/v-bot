@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button"
 import "@/styles/Questions.css"
 import CreateQuestionForm from "./CreateNewQuestionForm"
+import { fetchApi } from "@/lib/api"
 
 interface DocumentLink {
   id: number
@@ -51,13 +52,9 @@ export default function Questions() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const [catRes, faqRes] = await Promise.all([
-        fetch("http://localhost:3000/categories"),
-        fetch("http://localhost:3000/faq-items"),
-      ])
       const [catData, faqData] = await Promise.all([
-        catRes.json(),
-        faqRes.json(),
+        fetchApi("categories"),
+        fetchApi("faq-items"),
       ])
 
       setCategories(catData)
@@ -97,9 +94,8 @@ export default function Questions() {
   }
 
   const handleSave = async (id: string) => {
-    await fetch(`http://localhost:3000/faq-items/${id}`, {
+    await fetchApi(`faq-items/${id}`, {
       method: "PATCH",
-      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         question: editedQuestion,
         answer: editedAnswer,
@@ -111,18 +107,16 @@ export default function Questions() {
       editedDocs.map(async (doc) => {
         const isUnsaved = !doc.id || doc.id > 1_000_000_000_000
         if (isUnsaved) {
-          return fetch("http://localhost:3000/documents", {
+          return fetchApi("documents", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               url: doc.url,
               faq_item_id: parseInt(id),
             }),
           })
         } else {
-          return fetch(`http://localhost:3000/documents/${doc.id}`, {
+          return fetchApi(`documents/${doc.id}`, {
             method: "PATCH",
-            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ url: doc.url }),
           })
         }
@@ -131,13 +125,13 @@ export default function Questions() {
 
     await Promise.all(
       deletedDocIds.map((id) =>
-        fetch(`http://localhost:3000/documents/${id}`, {
+        fetchApi(`documents/${id}`, {
           method: "DELETE",
         })
       )
     )
 
-    const refreshedFaqItems = await fetch("http://localhost:3000/faq-items").then(res => res.json())
+    const refreshedFaqItems = await fetchApi("faq-items")
     setFaqItems(refreshedFaqItems)
     setOpenItems(prev => prev.filter(openId => openId !== id.toString()))
     resetEditState()
@@ -145,7 +139,7 @@ export default function Questions() {
 
   const handleQuestionDelete = async (id: string) => {
     if (window.confirm("Are you sure you want to delete this question?")) {
-      await fetch(`http://localhost:3000/faq-items/${id}`, {
+      await fetchApi(`faq-items/${id}`, {
         method: "DELETE",
       });
 
@@ -153,7 +147,7 @@ export default function Questions() {
       if (itemToDelete?.documents && itemToDelete.documents.length > 0) {
         await Promise.all(
           itemToDelete.documents.map(doc =>
-            fetch(`http://localhost:3000/documents/${doc.id}`, {
+            fetchApi(`documents/${doc.id}`, {
               method: "DELETE",
             })
           )
@@ -179,9 +173,8 @@ export default function Questions() {
       {showNewQuestionSlider && (
         <div
           style={{ backgroundColor: "#F6FFE0" }}
-          className={`fixed inset-y-0 slider shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${
-            showNewQuestionSlider ? "translate-x-0" : "translate-x-full"
-          } ${typeof window !== "undefined" && window.innerWidth < 640 ? "left-0 right-0" : "left-64 right-0"}`}
+          className={`fixed inset-y-0 slider shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${showNewQuestionSlider ? "translate-x-0" : "translate-x-full"
+            } ${typeof window !== "undefined" && window.innerWidth < 640 ? "left-0 right-0" : "left-64 right-0"}`}
         >
           <div className="h-full overflow-y-auto p-6">
             <div className="flex justify-between items-center mb-6">
@@ -196,7 +189,7 @@ export default function Questions() {
             <CreateQuestionForm
               categories={categories}
               onCreated={async () => {
-                const refreshedFaqItems = await fetch("http://localhost:3000/faq-items").then(res => res.json())
+                const refreshedFaqItems = await fetchApi("faq-items")
                 setFaqItems(refreshedFaqItems)
                 setShowNewQuestionSlider(false)
               }}

@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { fetchApi } from "@/lib/api";
 
 interface ChatHistoryItem {
   id: number;
@@ -29,11 +30,7 @@ export function ChatHistory() {
   React.useEffect(() => {
     const fetchChatHistory = async () => {
       try {
-        const response = await fetch("http://localhost:3000/bot-history");
-        if (!response.ok) {
-          throw new Error("Failed to fetch chat history");
-        }
-        const data = await response.json();
+        const data = await fetchApi("bot-history");
         setHistory(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An unknown error occurred");
